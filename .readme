@@ -1,0 +1,21 @@
+# RapGenius Scrapper
+
+A tool for scraping lyrics from RapGenius.com.
+
+## Installation
+
+To install the dependencies, run the following command:
+
+```pip install -r requirements.txt```
+
+## Usage
+
+To use the scrapper, run the following command:
+
+```python scrapper.py```
+
+This will scrape the lyrics for the specified artist and save them to a file.
+
+## Contributing
+
+If you would like to contribute to the project, please fork the repository and submit a pull request with your changes.
