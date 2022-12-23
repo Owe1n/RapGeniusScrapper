@@ -37,7 +37,7 @@ def fetch_songs(artist_list, num_songs, main_folder):
         # Create artist's folder in main folder
 
         artist_folder = os.path.join(
-            main_folder, artist.translate(str.maketrans("", "", '!@#$"’'))
+            main_folder, artist.translate(str.maketrans("", "", '!@#$":’'))
         )
 
         if not os.path.exists(artist_folder):
@@ -53,7 +53,7 @@ def fetch_songs(artist_list, num_songs, main_folder):
             song_file = os.path.join(
                 artist_folder,
                 song.title.replace(" ", "_").translate(
-                    str.maketrans("", "", '!@#$"’?')
+                    str.maketrans("", "", '!@#$"’?:')
                 ),
             )
             song_file = str(song_file) + ".txt"
